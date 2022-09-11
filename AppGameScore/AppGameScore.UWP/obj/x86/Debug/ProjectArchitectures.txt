@@ -1,0 +1,1 @@
+C:\Users\gui_h\source\repos\AppGameScore\AppGameScore\AppGameScore.UWP\AppGameScore.UWP.csproj;x86

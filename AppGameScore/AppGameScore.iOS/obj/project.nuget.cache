@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "me9m9zTsgn032mWUWVRaA0Sdhy60S/ipw4piA8xcDWJDbKmn4ouhRW9suOcSBlQfVcVQhsUinkgE0dmgOkFNwQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\gui_h\\source\\repos\\AppGameScore\\AppGameScore\\AppGameScore.iOS\\AppGameScore.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\gui_h\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\gui_h\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\gui_h\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}
