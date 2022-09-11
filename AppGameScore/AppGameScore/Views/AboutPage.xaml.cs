@@ -20,10 +20,10 @@ namespace AppGameScore.Views
         {
             return new List<Event>()
             {
-                new Event{ EventTitle = "Eleições 2022", BgColor = "#EB9999", Date = new DateTime(DateTime.Now.Ticks + new TimeSpan(180, 23, 45, 59).Ticks)},
-                new Event{ EventTitle = "Natal 2022", BgColor = "#96338F", Date = new DateTime(DateTime.Now.Ticks + new TimeSpan(200, 1, 22, 10).Ticks)},
-                new Event{ EventTitle = "7 de Setembro", BgColor = "#8251AE", Date = new DateTime(DateTime.Now.Ticks + new TimeSpan(132, 11, 15, 0).Ticks)},
-                new Event{ EventTitle = "Páscoa", BgColor = "#6787FF", Date = new DateTime(DateTime.Now.Ticks + new TimeSpan(14, 17, 29, 45).Ticks)},
+                new Event{ EventTitle = "Eleições 2022", BgColor = "#EB9999", Date = new DateTime(2022, 10, 02, 0, 00, 00)},
+                new Event{ EventTitle = "Natal 2022", BgColor = "#96338F", Date = new DateTime(2022, 12, 25, 0, 00, 00)},
+                new Event{ EventTitle = "7 de Setembro", BgColor = "#8251AE", Date = new DateTime(2022,09,7,0,00,00)},
+                new Event{ EventTitle = "Copa", BgColor = "#6787FF", Date = new DateTime(2022,11,20,0,00,00)},
             };
         }
 
@@ -37,7 +37,10 @@ namespace AppGameScore.Views
                 foreach (var evt in AllEvents)
                 {
                     var timespan = evt.Date - DateTime.Now;
-                    evt.Timespan = timespan;
+                    if (timespan.Days <0)
+                        evt.Timespan = evt.Date.AddYears(1) - DateTime.Now;
+                    else
+                        evt.Timespan = timespan;
                 }
 
                 eventList.ItemsSource = null;
