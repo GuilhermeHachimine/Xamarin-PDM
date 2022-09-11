@@ -60,4 +60,3 @@ namespace AppGameScore.Views
         public string BgColor { get; set; }
     }
 }
-}
